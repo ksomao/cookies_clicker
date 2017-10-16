@@ -1,5 +1,5 @@
 html, body {
-  background-color: #fff;
+  background-color: #717DBD;
 }
 main{
   display: block;
@@ -9,11 +9,22 @@ main{
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
+  margin-top: 30px;
+}
+.cpt{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 .button{
   display: block;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 150px;
-
+  margin-bottom: 30px;
+}
+.bonus{
+  display: block;
+  margin: 0 auto;
+  background-color: #8896E3;
 }
