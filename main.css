@@ -1,0 +1,19 @@
+html, body {
+  background-color: #fff;
+}
+main{
+  display: block;
+  margin: 0 auto;
+}
+.content{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.button{
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 150px;
+
+}
