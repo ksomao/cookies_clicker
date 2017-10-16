@@ -10,21 +10,40 @@ main{
   margin: 0 auto;
   margin-bottom: 30px;
   margin-top: 30px;
+  width: 900px;
+  height: 100%;
+  text-align: center;
+  font-family: arial;
 }
 .cpt{
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
+
+}
+.buttoncontainer{
+  height:500px;
+}
+.button img{
+  height: 100%;
+  width: 100%;
+
 }
 .button{
   display: block;
   margin: 0 auto;
-  background-color: #fff;
-  border-radius: 150px;
-  margin-bottom: 30px;
+  height: 500px;
+  width: 500px;
+}
+.button:hover{
+  cursor: pointer;
+}
+.button:active{
+  transform: scale(0.9);
 }
 .bonus{
   display: block;
   margin: 0 auto;
   background-color: #8896E3;
+  height: 300px;
 }
