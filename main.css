@@ -62,7 +62,7 @@ main{
 .bonusContainer h2{
   display: block;
 }
-.bonusContainer .bonus{
+.bonusContainer .bonus, .bonusContainer2 .bonus2{
   margin-right: 20px;
   background-color: rgba(147,147,250,0.5);
   height: 200px;
