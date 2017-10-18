@@ -11,7 +11,7 @@ main{
   /*background-size: cover;*/
 }
 .content{
-  display: block;
+  display: inline-block;
   margin: 0 auto;
   margin-bottom: 30px;
   margin-top: 30px;
@@ -49,7 +49,7 @@ main{
 .button:active{
   transform: scale(1);
 }
-.bonusContainer{
+.bonusContainer, .bonusContainer2{
   display: block;
   margin: 0 auto;
   padding : 20px;
