@@ -76,3 +76,31 @@ main{
 .bonuscontainer .bonus:active{
   transform: scale(1);
 }
+
+
+
+h3 {
+  display: block;
+  color: white;
+  animation-name: defile;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes defile {
+  0%{
+
+    opacity: 1;
+    transform: rotateX( 5deg ) translateZ(0);
+  }
+
+  50% {
+    opacity: 1;
+
+  }
+  100% {
+    opacity: 0;
+    transform: rotateX( 20deg ) translateZ(500px);
+}
