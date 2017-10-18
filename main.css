@@ -27,7 +27,7 @@ main{
   color: #fff;
   font-size: 30px;
 }
-.buttoncontainer{
+.buttonContainer{
   height:530px;
 }
 .button img{
@@ -49,7 +49,7 @@ main{
 .button:active{
   transform: scale(1);
 }
-.bonuscontainer{
+.bonusContainer{
   display: block;
   margin: 0 auto;
   padding : 20px;
@@ -59,20 +59,20 @@ main{
   display: flex;
   flex-direction: row;
 }
-.bonuscontainer h2{
+.bonusContainer h2{
   display: block;
 }
-.bonuscontainer .bonus{
+.bonusContainer .bonus{
   margin-right: 20px;
   background-color: rgba(147,147,250,0.5);
   height: 200px;
   width: 200px;
   box-shadow: 8px 8px 0px rgba(15,15,25,0.7);
 }
-.bonuscontainer .bonus:hover{
+.bonusContainer .bonus:hover{
   cursor: pointer;
   transform: scale(1.1)
 }
-.bonuscontainer .bonus:active{
+.bonusContainer .bonus:active{
   transform: scale(1);
 }

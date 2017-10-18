@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>cookie</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cookie</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-  <main>
+<main>
     <div class="content">
-      <div class="cpt">
-        <h1>Points</h1>
-      </div>
-      <div class="buttoncontainer">
-        <div class="button">
-          <img src="https://images7.solidcommerce.com/sc7051343/cookiemonster.png" alt="cookie monster">
+        <div class="cpt">
+            <h1>Points</h1>
+            <div id="score"></div>
+            <div id="cookieBySecond"></div>
         </div>
-      </div>
-      <div class="bonuscontainer">
-        <div class="bonus" id="cursor"></div>
-        <div class="bonus" id="grandMa"></div>
-        <div class="bonus" id="farm"></div>
-      </div>
+        <div class="buttonContainer">
+            <div class="button">
+                <img src="https://images7.solidcommerce.com/sc7051343/cookiemonster.png" alt="cookie monster">
+            </div>
+        </div>
+        <div class="bonusContainer">
+            <div class="bonus" id="cursor">
+                <div class="cost"></div>
+            </div>
+            <div class="bonus" id="grandMa">
+                <div class="cost"></div>
+            </div>
+            <div class="bonus" id="farm">
+                <div class="cost"></div>
+            </div>
+        </div>
     </div>
-  </main>
+</main>
+<script src="app.js"></script>
 </body>
 </html>
