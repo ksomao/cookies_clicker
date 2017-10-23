@@ -35,7 +35,7 @@ animation: anim 2000ms ease-in-out;
   background: -webkit-radial-gradient(center, ellipse cover, rgba(240,249,255,0) 0%, rgba(120,125,128,0) 50%, rgba(0,0,0,1) 100%);
   display: block;
   margin: 0 auto;
-  height: 50%;
+  height: 70%;
 }
 .buttonContainer{
   height: 100%;
@@ -91,16 +91,21 @@ animation: anim 2000ms ease-in-out;
 .button:active{
   transform: scale(1);
 }
+.BonusCommun{
+  padding : 20px;
+  background-color: #1B1B2E;
+  height: 25%;
+  border-top: 10px solid #A85F22;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(27,27,46,1) 15%);
+}
 .bonusContainer{
   display: block;
   margin: 0 auto;
-  padding : 20px;
-  background-color: #1B1B2E;
-  height: 20%;
-  border-top: 10px solid #A85F22;
+  width: 80%;
+  padding-top: 1.5%;
   display: flex;
   flex-direction: row;
-  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(27,27,46,1) 15%);
+  justify-content: space-around;
 }
 .bonusContainer h2{
   display: block;
@@ -120,7 +125,7 @@ animation: anim 2000ms ease-in-out;
   display: block;
   margin: 0 auto;
   height: 70%;
-  width: 130px;
+  width: 70%;
   object-fit: cover;
 }
 .bonusContainer .bonus:hover{
@@ -130,42 +135,31 @@ animation: anim 2000ms ease-in-out;
 .bonusContainer .bonus:active{
   transform: scale(1);
 }
-.bonusContainer2{
-  display: block;
-  margin: 0 auto;
-  padding : 20px;
-  background-color: #1B1B2E;
-  height: 20%;
-  border-top: 10px solid #A85F22;
-  display: flex;
-  flex-direction: row;
-  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(27,27,46,1) 15%);
-}
-.bonusContainer2 h2{
+.bonusContainer h2{
   display: block;
 }
-.bonusContainer2 .bonus2{
+.bonusContainer .bonus2{
   margin-right: 20px;
   background-color: rgba(147,147,250,0.5);
   height: 200px;
   width: 200px;
   box-shadow: 8px 8px 0px rgba(15,15,25,0.7);
 }
-.bonusContainer2 .bonus2 .cost{
+.bonusContainer .bonus2 .cost{
   border: 1px red dashed;
   height: 20%;
 }
-.bonusContainer2 .bonus2 img{
+.bonusContainer .bonus2 img{
   display: block;
   margin: 0 auto;
   height: 70%;
-  width: 130px;
+  width: 70%;
   object-fit: cover;
 }
-.bonusContainer2 .bonus2:hover{
+.bonusContainer .bonus2:hover{
   cursor: pointer;
   transform: scale(1.1)
 }
-.bonusContainer2 .bonus2:active{
+.bonusContainer .bonus2:active{
   transform: scale(1);
 }
