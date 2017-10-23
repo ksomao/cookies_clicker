@@ -15,7 +15,7 @@ main{
 s
 }
 .content{
-  display: block;
+  display: inline-block;
   margin: 0 auto;
   margin-bottom: 30px;
   margin-top: 30px;
@@ -54,18 +54,18 @@ s
 .button:active{
   transform: scale(1);
 }
-.bonusContainer{
-  display: flex;
-  flex-direction: row;
+.bonusContainer, .bonusContainer2{
+  display: block;
+  margin: 0 auto;
   padding : 20px;
   background-color: #1B1B2E;
   height: 225px;
   border-top: 10px solid #A85F22;
 
 }
+.bonusContainer .bonus, .bonusContainer2 .bonus2{
+  margin-right: 20px;
 
-.bonusContainer .bonus{
-  margin : 2.5%;
   background-color: rgba(147,147,250,0.5);
   height: 200px;
   width: 200px;
