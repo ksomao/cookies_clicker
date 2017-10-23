@@ -1,46 +1,88 @@
 html, body {
   background-color: #353559;
   margin: 0 auto;
+  background-image: url(http://data.whicdn.com/images/290236891/original.gif);
+  background-repeat: repeat-x;
+  background-blend-mode: soft-light;
+
 }
 main{
   display: block;
-  /*height: 100vh;*/
-  margin: -30px auto;
-  background-image: url(http://data.whicdn.com/images/290236891/original.gif);
-  background-repeat: repeat-x;
-  /*background-size: cover;*/
-}
-.content{
-  display: inline-block;
   margin: 0 auto;
-  margin-bottom: 30px;
-  margin-top: 30px;
   width: 100%;
-  height: 100%;
+  height: 980px;
   text-align: center;
   font-family: arial;
+}
+.test {
+font-family:"Comic Sans MS";
+font-size:30px;
+font-weight:bold;
+color: white;
+cursor: hand;
+user-select: none;
+animation: anim 2000ms ease-in-out;
+-moz-user-select: none;
+}
+
+@keyframes anim {
+    from {  opacity: 1;  }
+    to {  opacity: 0;  top: 0;  }
+}
+
+
+.content{
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(240,249,255,0) 0%, rgba(120,125,128,0) 50%, rgba(0,0,0,1) 100%);
+  display: block;
+  margin: 0 auto;
+  height: 50%;
+}
+.buttonContainer{
+  height: 100%;
+}
+.imagesbutton{
+  display: block;
+  margin:0 auto;
+  height: 100%;
+  /*height: 1120px;
+  width: 1008px;
+  background-color: #353559;
+  background-image: url(https://vignette.wikia.nocookie.net/trove/images/5/50/Purple_Beam_affix.gif/revision/latest?cb=20151115045352);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;*/
 }
 .cpt{
   display: block;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 1%;
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
+  height: 30px;
+  padding-left: 2%;
 }
-.buttonContainer{
-  height:530px;
+.cpt #score{
+  height: 3%;
+  padding: 1%;
+}
+.cpt #cookieBySecond{
+  padding-right: 12%;
+  height: 3%;
 }
 .button img{
-  margin-top: 30px;
-  height: 100%;
-  width: 100%;
-  user-select: none;
+  margin-top: 20px;
+  height: 80%;
+  width: 80%;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
 }
 .button{
   display: block;
   margin: 0 auto;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
 }
 .button:hover{
   cursor: pointer;
@@ -49,30 +91,81 @@ main{
 .button:active{
   transform: scale(1);
 }
-.bonusContainer, .bonusContainer2{
+.bonusContainer{
   display: block;
   margin: 0 auto;
   padding : 20px;
   background-color: #1B1B2E;
-  height: 225px;
+  height: 20%;
   border-top: 10px solid #A85F22;
   display: flex;
   flex-direction: row;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(27,27,46,1) 15%);
 }
 .bonusContainer h2{
   display: block;
 }
-.bonusContainer .bonus, .bonusContainer2 .bonus2{
+.bonusContainer .bonus{
   margin-right: 20px;
   background-color: rgba(147,147,250,0.5);
   height: 200px;
   width: 200px;
   box-shadow: 8px 8px 0px rgba(15,15,25,0.7);
 }
+.bonusContainer .bonus .cost{
+  border: 1px red dashed;
+  height: 20%;
+}
+.bonusContainer .bonus img{
+  display: block;
+  margin: 0 auto;
+  height: 70%;
+  width: 130px;
+  object-fit: cover;
+}
 .bonusContainer .bonus:hover{
   cursor: pointer;
   transform: scale(1.1)
 }
 .bonusContainer .bonus:active{
+  transform: scale(1);
+}
+.bonusContainer2{
+  display: block;
+  margin: 0 auto;
+  padding : 20px;
+  background-color: #1B1B2E;
+  height: 20%;
+  border-top: 10px solid #A85F22;
+  display: flex;
+  flex-direction: row;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(27,27,46,1) 15%);
+}
+.bonusContainer2 h2{
+  display: block;
+}
+.bonusContainer2 .bonus2{
+  margin-right: 20px;
+  background-color: rgba(147,147,250,0.5);
+  height: 200px;
+  width: 200px;
+  box-shadow: 8px 8px 0px rgba(15,15,25,0.7);
+}
+.bonusContainer2 .bonus2 .cost{
+  border: 1px red dashed;
+  height: 20%;
+}
+.bonusContainer2 .bonus2 img{
+  display: block;
+  margin: 0 auto;
+  height: 70%;
+  width: 130px;
+  object-fit: cover;
+}
+.bonusContainer2 .bonus2:hover{
+  cursor: pointer;
+  transform: scale(1.1)
+}
+.bonusContainer2 .bonus2:active{
   transform: scale(1);
 }

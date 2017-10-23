@@ -1,11 +1,26 @@
 var cookies = 0;
 var cookiesBySecond = 0;
 var cookiesByClick = 1;
-var cookieDiv = document.querySelector(".buttonContainer");
+var cookieDiv = document.querySelector(".button");
 var scoreDiv = document.querySelector("#score");
 var cookieBySecondDom = document.querySelector("#cookieBySecond");
 var bonusDOM = document.querySelectorAll(".bonus");
 var bonus2DOM = document.querySelectorAll(".bonus2");
+var body = document.querySelector("body");
+
+cookieDiv.addEventListener("click", function (e) {
+console.log(cookies);
+var x = document.createElement("div");
+x.innerHTML = "+" + cookiesByClick;
+body.appendChild(x);
+x.style.position = "absolute";
+x.style.top = (e.clientY-50) + "px";
+x.style.left = e.clientX + "px";
+x.classList.add("test");
+setTimeout(function () {
+body.removeChild(x);
+}, 2000)
+});
 
 //Bonus par seconde
 class bonusSecond {
