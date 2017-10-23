@@ -54,9 +54,26 @@ s
 .button:active{
   transform: scale(1);
 }
+.bonusContainer {
+  float :left;
+  display: flex;
+  flex: row;
+
+}
+.bonusContainer2 {
+  float : right;
+  display: flex;
+  flex: row;
+
+}
+
+.clear {
+  clear: both;
+}
+
+
 .bonusContainer, .bonusContainer2{
-  display: block;
-  margin: 0 auto;
+
   padding : 20px;
   background-color: #1B1B2E;
   height: 225px;
