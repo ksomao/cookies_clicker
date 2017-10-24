@@ -9,25 +9,24 @@ var bonus2DOM = document.querySelectorAll(".bonus2");
 var body = document.querySelector("body");
 
 cookieDiv.addEventListener("click", function (e) {
-console.log(cookies);
-var x = document.createElement("div");
-x.innerHTML = "+" + cookiesByClick;
-body.appendChild(x);
-x.style.position = "absolute";
-x.style.top = (e.clientY-50) + "px";
-x.style.left = e.clientX + "px";
-x.classList.add("test");
-setTimeout(function () {
-body.removeChild(x);
-}, 2000)
+    console.log(cookies);
+    var x = document.createElement("div");
+    x.innerHTML = "+" + cookiesByClick;
+    body.appendChild(x);
+    x.style.position = "absolute";
+    x.style.top = (e.clientY - 50) + "px";
+    x.style.left = e.clientX + "px";
+    x.classList.add("test");
+    setTimeout(function () {
+        body.removeChild(x);
+    }, 2000)
 });
 
 //Bonus par seconde
 class bonusSecond {
-    constructor(cost, type, cookiesBySecond) {
+    constructor(cost, cookiesBySecond) {
         this.cost = cost;
         this.cookiesBySecond = cookiesBySecond;
-        this.type = type;
     }
 
     bonusLevelUp() {
@@ -35,10 +34,10 @@ class bonusSecond {
     }
 }
 
-var cursor = new bonusSecond(50, 1, 1);
-var grandMa = new bonusSecond(100, 1, 2);
-var Farm = new bonusSecond(1000, 1, 8);
-var bonusListeSecond = [cursor, grandMa, Farm]
+var cursor = new bonusSecond(50, 1);
+var grandMa = new bonusSecond(100, 2);
+var Farm = new bonusSecond(1000, 8);
+var bonusListeSecond = [cursor, grandMa, Farm];
 
 cookieDiv.addEventListener("click", function () {
     cookies += cookiesByClick;
@@ -49,23 +48,24 @@ cookieDiv.addEventListener("click", function () {
 
 //Bonus par click
 class bonusClick {
-    constructor(cost, type, cookiesByClick) {
+    constructor(cost, cookiesByClick) {
         this.cost = cost;
         this.cookiesByClick = cookiesByClick;
-        this.type = type;
     }
 
     bonusLevelUp() {
-        this.cost = Math.round(this.cost * 1.15);
+        this.cost = Math.round(this.cost * 1.2);
     }
 }
-var upClick = new bonusClick(15, 2, 4);
-var upClick2 = new bonusClick(20, 2, 5);
-var upClick3 = new bonusClick(25, 2, 10);
+
+var upClick = new bonusClick(15, 4);
+var upClick2 = new bonusClick(20, 5);
+var upClick3 = new bonusClick(25, 10);
 var bonusListeClick = [upClick, upClick2, upClick3];
 
 //Parcour le tableau divs(bonusDOM) et ajoute un événement click a chaque div(.bonus)
 bonusDOM.forEach(function (bonus, index) {
+    bonus.children[0].innerHTML = bonusListeSecond[index].cost;
     bonus.addEventListener("click", function () {
         if (cookies - bonusListeSecond[index].cost >= 0) {
             cookies -= bonusListeSecond[index].cost;
@@ -84,15 +84,18 @@ bonusDOM.forEach(function (bonus, index) {
 });
 
 bonus2DOM.forEach(function (bonus, index) {
+    bonus.children[0].innerHTML = bonusListeClick[index].cost;
     bonus.addEventListener("click", function () {
-      if (cookies - bonusListeClick[index].cost >= 0) {
+        if (cookies - bonusListeClick[index].cost >= 0) {
             cookies -= bonusListeClick[index].cost;
+            scoreDiv.innerHTML = cookies;
             cookiesByClick += bonusListeClick[index].cookiesByClick;
             //Level up du bonus qui entraine une augmentation du coût
             bonusListeClick[index].bonusLevelUp();
+            console.log("ok");
             scoreDiv.innerHTML = cookies;
 
-          }
+        }
     });
 });
 
