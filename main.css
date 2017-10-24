@@ -92,6 +92,8 @@ animation: anim 2000ms ease-in-out;
   transform: scale(1);
 }
 .BonusCommun{
+  display: flex;
+  flex-direction: row;
   padding : 20px;
   background-color: #1B1B2E;
   height: 25%;
@@ -101,7 +103,7 @@ animation: anim 2000ms ease-in-out;
 .bonusContainer{
   display: block;
   margin: 0 auto;
-  width: 80%;
+  width: 50%;
   padding-top: 1.5%;
   display: flex;
   flex-direction: row;
@@ -135,31 +137,41 @@ animation: anim 2000ms ease-in-out;
 .bonusContainer .bonus:active{
   transform: scale(1);
 }
-.bonusContainer h2{
+.bonusContainer2{
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 1.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.bonusContainer2 h2{
   display: block;
 }
-.bonusContainer .bonus2{
+.bonusContainer2 .bonus2{
   margin-right: 20px;
   background-color: rgba(147,147,250,0.5);
   height: 200px;
   width: 200px;
   box-shadow: 8px 8px 0px rgba(15,15,25,0.7);
+  border-radius: 50%; 
 }
-.bonusContainer .bonus2 .cost{
+.bonusContainer2 .bonus2 .cost{
   margin-top: 2%;
   height: 20%;
 }
-.bonusContainer .bonus2 img{
+.bonusContainer2 .bonus2 img{
   display: block;
   margin: 0 auto;
   height: 70%;
   width: 70%;
   object-fit: cover;
 }
-.bonusContainer .bonus2:hover{
+.bonusContainer2 .bonus2:hover{
   cursor: pointer;
   transform: scale(1.1)
 }
-.bonusContainer .bonus2:active{
+.bonusContainer2 .bonus2:active{
   transform: scale(1);
 }
