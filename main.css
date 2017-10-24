@@ -61,6 +61,7 @@ animation: anim 2000ms ease-in-out;
   font-size: 20px;
   height: 30px;
   padding-left: 2%;
+
 }
 .cpt #score{
   height: 3%;
@@ -118,7 +119,6 @@ animation: anim 2000ms ease-in-out;
   box-shadow: 8px 8px 0px rgba(15,15,25,0.7);
 }
 .bonusContainer .bonus .cost{
-  border: 1px red dashed;
   height: 20%;
 }
 .bonusContainer .bonus img{
@@ -138,15 +138,21 @@ animation: anim 2000ms ease-in-out;
 .bonusContainer h2{
   display: block;
 }
+.bonus2 {
+  border-radius: 50%;
+}
+
+
 .bonusContainer .bonus2{
   margin-right: 20px;
   background-color: rgba(147,147,250,0.5);
   height: 200px;
   width: 200px;
   box-shadow: 8px 8px 0px rgba(15,15,25,0.7);
+
 }
 .bonusContainer .bonus2 .cost{
-  border: 1px red dashed;
+
   height: 20%;
 }
 .bonusContainer .bonus2 img{
