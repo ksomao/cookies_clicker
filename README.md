@@ -1,2 +1,0 @@
-# cookies_clicker
-hello
